@@ -2,7 +2,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" className="font-size-3 bg-color-1 scroll-smooth font-sans">
+    <Html
+      lang="en"
+      className="font-size-3 bg-color-2 primary-color-3 scroll-smooth font-sans">
       <Head>
         <script
           dangerouslySetInnerHTML={{
