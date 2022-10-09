@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function NavBar() {
   return (
     <>
-      <nav>
+      <nav className="sticky">
         <div className="container">
           <h2 className="logo font-bold">nooutidev</h2>
           <div className="search-bar">
