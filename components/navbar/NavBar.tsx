@@ -6,7 +6,7 @@ export default function NavBar() {
       <nav className="sticky w-full bg-colorWhite p-[0.7rem_0] top-0 z-10">
         <div className="w-[80%] m-auto flex justify-between items-center">
           <h2 className="font-bold text-md">nooutidev</h2>
-          <div className="bg-colorLight rounded-full p-3">
+          <div className="bg-colorLight rounded-full p-3 hidden md:block">
             <i className="bi bi-search"></i>
             <input
               className="outline-none bg-transparent w-[30vw] ml-4 text-colorDark placeholder:text-colorGray text-sm"
