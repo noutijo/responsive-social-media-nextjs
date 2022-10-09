@@ -7,7 +7,7 @@ export default function NavBar() {
         <div className="container">
           <h2 className="logo font-bold">nooutidev</h2>
           <div className="search-bar">
-            <i className="uil uil-search"></i>
+            <i className="bi bi-search"></i>
             <input
               className="outline-none"
               type="search"
