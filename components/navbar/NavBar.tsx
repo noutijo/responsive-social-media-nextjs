@@ -7,7 +7,7 @@ export default function NavBar() {
         <div className="w-[80%] m-auto flex justify-between items-center">
           <h2 className="font-bold text-md">nooutidev</h2>
           <div className="bg-colorLight rounded-full p-3 hidden md:block">
-            <i className="bi bi-search"></i>
+            <i className="bi bi-search text-colorGray"></i>
             <input
               className="outline-none bg-transparent w-[30vw] ml-4 text-colorDark placeholder:text-colorGray text-sm"
               type="search"
