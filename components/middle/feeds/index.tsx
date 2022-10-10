@@ -30,6 +30,7 @@ export default function Feeds() {
       <div className="mt-4 overflow-x-scroll w-full">
         <FeedItem />
         <FeedItem />
+        <FeedItem />
       </div>
     </>
   );

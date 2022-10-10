@@ -15,7 +15,7 @@ export default function FeedItem() {
             />
           </div>
           <div className="info-user">
-            <h3 className="text-sm">Dika Rose</h3>
+            <h3 className="text-sm font-medium">Oreol Noumodong</h3>
             <small className="text-colorGray text-xs">
               USA, 12 minutes ago
             </small>
@@ -57,13 +57,13 @@ export default function FeedItem() {
           )
         )}
         <p className="ml-2">
-          Liked by <b>Tykio Blache</b> and <b>122 orthers</b>
+          Liked by <b>Joya Blanche</b> and <b>122 orthers</b>
         </p>
       </div>
 
       <div className="text-sm">
         <p>
-          <b>Franky Levy</b> dolor sit amet consectetur adipisicing{" "}
+          <b>Kenkouo Olive</b> dolor sit amet consectetur adipisicing{" "}
           <span className="hash-tag">#coding</span>.
         </p>
       </div>
