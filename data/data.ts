@@ -1,4 +1,4 @@
-import { menuItemType, messageType, requestType } from "@/types/types"
+import { menuItemType, messageType, requestType, storyType } from "@/types/types"
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -118,9 +118,6 @@ export const messagesData: messageType[] = [
 
 
 //mutual friends data
-
-
-//menu items
 export const mutualFriendsData: requestType[] = [
     {
         name: "Mougnol Herman",
@@ -137,4 +134,38 @@ export const mutualFriendsData: requestType[] = [
         profile_img: "profile-10.jpg",
         mutual_friends: 3
     },
+]
+
+//mutual friends data
+export const storiesData: storyType[] = [
+    {
+    name: "Your Story",
+    profile_img: "me.jpeg",
+    story_img: "story-1.jpg",
+},
+    {
+    name: "Nkemtakeh Cels",
+    profile_img: "profile-1.jpg",
+    story_img: "story-2.jpg",
+},
+    {
+    name: "Abena Jeanne",
+    profile_img: "profile-12.jpg",
+    story_img: "story-3.jpg",
+},
+    {
+    name: "Moutchom Brice",
+    profile_img: "profile-3.jpg",
+    story_img: "story-4.jpg",
+},
+    {
+    name: "Melonkeng Jose",
+    profile_img: "profile-17.jpg",
+    story_img: "story-5.jpg",
+},
+    {
+    name: "Atangana Meil",
+    profile_img: "profile-20.jpg",
+    story_img: "story-6.jpg",
+},
 ]

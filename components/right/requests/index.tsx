@@ -7,7 +7,7 @@ export default function FriendsRequests() {
       <div className="mt-4">
         <h4 className="font-bold text-colorGray my-4">Requests</h4>
 
-        {/** get all request and display*/}
+        {/** get all requests and display*/}
         {mutualFriendsData.map((item, __) => (
           <RequestItem key={__} data={item} />
         ))}

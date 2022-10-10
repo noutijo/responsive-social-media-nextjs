@@ -21,4 +21,10 @@ export type requestType = {
     name: string,
     profile_img: string,
     mutual_friends: number
+
+}
+export type storyType = {
+    name: string,
+    profile_img: string,
+    story_img: string,
 }
