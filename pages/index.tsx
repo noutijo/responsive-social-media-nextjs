@@ -1,4 +1,5 @@
 import PrincipalLayout from "@components/layouts/PrincipalLayout"
+import Feeds from "@components/middle/feeds";
 import Stories from "@components/middle/stories";
 import Head from "next/head";
 export default function Home(){
@@ -10,7 +11,8 @@ export default function Home(){
       </Head>
 
       <Stories/>
-
+      <Feeds/>
+      
     </div>
   );
 };
