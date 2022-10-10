@@ -60,20 +60,13 @@ export default function FeedItem({ data }: { data: postType }) {
 
       <div className="flex">
         {/** profiles */}
-        {["profile-12.jpg", "profile-10.jpg", "profile-11.jpg"].map(
-          (item, __) => (
-            <span
-              key={__}
-              className="rounded-full w-6 h-6 overflow-hidden border-2 border-colorWhite flex -ml-3 first:ml-0">
-              <Image
-                width={18}
-                height={18}
-                src={`/images/${item}`}
-                alt={item}
-              />
-            </span>
-          )
-        )}
+        {like_by_profiles.map((item, __) => (
+          <span
+            key={__}
+            className="rounded-full w-6 h-6 overflow-hidden border-2 border-colorWhite flex -ml-3 first:ml-0">
+            <Image width={18} height={18} src={`/images/${item}`} alt={item} />
+          </span>
+        ))}
         <p className="ml-2">
           Liked by <b>{like_by_name}</b> and <b>{total_likes} orthers</b>
         </p>
