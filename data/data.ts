@@ -1,4 +1,4 @@
-import { menuItemType } from "@/types/types"
+import { menuItemType, messageType, requestType } from "@/types/types"
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -16,13 +16,13 @@ export const menuItemsData: menuItemType[] = [
         title: `Notifications`,
         url: "/notifications",
         iconName: `bi-bell`,
-        notifications:10,
+        notifications: 10,
     },
     {
         title: `Messages`,
         url: "/messages",
         iconName: `bi-chat-dots`,
-        notifications:7,
+        notifications: 7,
     },
     {
         title: `Bookmarks`,
@@ -43,5 +43,98 @@ export const menuItemsData: menuItemType[] = [
         title: `Settings`,
         url: "/settings",
         iconName: `bi-gear`,
+    },
+]
+
+//messages data
+export const messagesData: messageType[] = [
+    {
+        user: {
+            name: "Nkemtakeh C.",
+            profile_img: "profile-8.jpg",
+            connected: true
+        },
+        message: {
+            content: "For sure, I'll",
+            new: false,
+        }
+    },
+    {
+        user: {
+            name: "Tematio R.",
+            profile_img: "profile-10.jpg",
+            connected: false
+        },
+        message: {
+            content: "Really appreciated, thanks!",
+            new: true,
+        }
+    },
+    {
+        user: {
+            name: "Haki Bobo",
+            profile_img: "profile-11.jpg",
+            connected: false
+        },
+        message: {
+            content: "Ok bro!",
+            new: true,
+        }
+    },
+    {
+        user: {
+            name: "Owono J.",
+            profile_img: "profile-12.jpg",
+            connected: false
+        },
+        message: {
+            content: "We'll made it!",
+            new: false,
+        }
+    },
+    {
+        user: {
+            name: "Brenda O.",
+            profile_img: "profile-13.jpg",
+            connected: true
+        },
+        message: {
+            content: "Love you.",
+            new: false,
+        }
+    },
+    {
+        user: {
+            name: "Mapa O.",
+            profile_img: "profile-16.jpg",
+            connected: false
+        },
+        message: {
+            content: "Alright boss, I'm gonna the US by tonight, I'll let you know.",
+            new: true,
+        }
+    },
+]
+
+
+//mutual friends data
+
+
+//menu items
+export const mutualFriendsData: requestType[] = [
+    {
+        name: "Mougnol Herman",
+        profile_img: "profile-15.jpg",
+        mutual_friends: 11
+    },
+    {
+        name: "Kamgia Paul",
+        profile_img: "profile-12.jpg",
+        mutual_friends: 25
+    },
+    {
+        name: "Abena Oreole",
+        profile_img: "profile-10.jpg",
+        mutual_friends: 3
     },
 ]
