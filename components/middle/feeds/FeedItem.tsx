@@ -26,7 +26,7 @@ export default function FeedItem() {
         </span>
       </div>
       {/**feeds */}
-      <div className="rounded-2xl overflow-hidden my-3">
+      <div className="rounded-2xl overflow-hidden my-3 w-full">
         <img src="./images/feed-1.jpg" alt="feed image" />
       </div>
 
@@ -72,9 +72,7 @@ export default function FeedItem() {
             alt="Oreol Profile"
           />{" "}
         </span>
-        <p>
-          Liked by <b>Tykio Blache</b> and <b>122 orthers</b>
-        </p>
+        
       </div>
 
       <div className="caption">

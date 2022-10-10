@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <>
-      <nav className="sticky w-full bg-colorWhite p-[0.7rem_0] top-0 z-10">
-        <div className="w-[80%] m-auto flex justify-between items-center">
+      <nav className="sticky w-screen bg-colorWhite p-[0.7rem_0] top-0 z-10">
+        <div className="w-[92vw] md:w-[80vw] m-auto flex justify-between items-center">
           <Link href={"/"}>
             <h2 className="font-bold text-md cursor-pointer">nooutidev</h2>
           </Link>
