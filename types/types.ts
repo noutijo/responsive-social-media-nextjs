@@ -23,8 +23,23 @@ export type requestType = {
     mutual_friends: number
 
 }
+
 export type storyType = {
     name: string,
     profile_img: string,
     story_img: string,
+}
+
+export type postType = {
+    user: {
+        name: string,
+        profile_img: string,
+    },
+    post_img: string,
+    like_by_profiles:string[],
+    like_by_name:string,
+    post_desc:string,
+    location:string,
+    date:string,
+    total_likes:number
 }

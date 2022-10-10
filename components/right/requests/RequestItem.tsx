@@ -23,10 +23,10 @@ export default function RequestItem({ data }: { data: requestType }) {
           </div>
         </div>
         <div className="flex gap-4">
-          <button className="bg-colorPrimary text-white px-6 py-3 rounded-full cursor-pointer font-medium transition duration-30 ease-out inline-block text-sm">
+          <button className="bg-colorPrimary text-white px-4 py-3 rounded-full cursor-pointer font-medium transition duration-30 ease-out inline-block text-sm">
             Accept
           </button>
-          <button className="bg-colorLight px-6 py-3 rounded-full cursor-pointer font-medium transition duration-30 ease-out text-sm">
+          <button className="bg-colorLight px-4 py-3 rounded-full cursor-pointer font-medium transition duration-30 ease-out text-sm">
             Decline
           </button>
         </div>

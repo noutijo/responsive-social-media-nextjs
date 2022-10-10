@@ -1,7 +1,18 @@
-import { storiesData } from "@data/data";
+import { postType } from "@/types/types";
 import Image from "next/image";
 
-export default function FeedItem() {
+export default function FeedItem({ data }: { data: postType }) {
+  const {
+    user,
+    post_img,
+    like_by_profiles,
+    like_by_name,
+    post_desc,
+    total_likes,
+    location,
+    date
+  } = data;
+
   return (
     <div className="bg-colorWhite rounded-2xl p-4 my-4 w-full">
       <div className="flex items-center justify-between">
@@ -10,14 +21,14 @@ export default function FeedItem() {
             <Image
               width={30}
               height={30}
-              src="/images/me.jpeg"
-              alt="Oreol Profile"
+              src={`/images/${user.profile_img}`}
+              alt={user.profile_img}
             />
           </div>
           <div className="info-user">
-            <h3 className="text-sm font-medium">Oreol Noumodong</h3>
+            <h3 className="text-sm font-medium">{user.name}</h3>
             <small className="text-colorGray text-xs">
-              USA, 12 minutes ago
+              {location}, {date} ago
             </small>
           </div>
         </div>
@@ -27,7 +38,7 @@ export default function FeedItem() {
       </div>
       {/**feeds */}
       <div className="rounded-2xl overflow-hidden my-3 w-full">
-        <img src="./images/feed-1.jpg" alt="feed image" />
+        <img src={`./images/${post_img}`} alt="feed image" />
       </div>
 
       <div className="flex justify-between items-center m-2 text-lg">
@@ -51,20 +62,26 @@ export default function FeedItem() {
         {/** profiles */}
         {["profile-12.jpg", "profile-10.jpg", "profile-11.jpg"].map(
           (item, __) => (
-            <span key={__} className="rounded-full w-6 h-6 overflow-hidden border-2 border-colorWhite flex -ml-3 first:ml-0">
-              <Image width={18} height={18} src={`/images/${item}`} alt={item} />
+            <span
+              key={__}
+              className="rounded-full w-6 h-6 overflow-hidden border-2 border-colorWhite flex -ml-3 first:ml-0">
+              <Image
+                width={18}
+                height={18}
+                src={`/images/${item}`}
+                alt={item}
+              />
             </span>
           )
         )}
         <p className="ml-2">
-          Liked by <b>Joya Blanche</b> and <b>122 orthers</b>
+          Liked by <b>{like_by_name}</b> and <b>{total_likes} orthers</b>
         </p>
       </div>
 
       <div className="text-sm">
-        <p>
-          <b>Kenkouo Olive</b> dolor sit amet consectetur adipisicing{" "}
-          <span className="hash-tag">#coding</span>.
+        <p className="line-clamp-2">
+          <b>{like_by_name}</b> {post_desc}
         </p>
       </div>
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>

@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { storiesData } from "@data/data";
+import { postsData } from "@data/data";
 import FeedItem from "./FeedItem";
 
 export default function Feeds() {
   return (
     <>
       <div className="w-full flex items-center justify-between gap-4 mt-4 bg-colorWhite p-[0.6rem_1rem] rounded-2xl">
+        {/** search bar -feeds */}
         <div className="rounded-full overflow-hidden flex">
           <Image
             width={36}
@@ -28,9 +29,10 @@ export default function Feeds() {
       </div>
 
       <div className="mt-4 overflow-x-scroll w-full">
-        <FeedItem />
-        <FeedItem />
-        <FeedItem />
+        {/** get all posts/feeds and display*/}
+        {postsData.map((item, __) => (
+          <FeedItem key={__} data={item} />
+        ))}{" "}
       </div>
     </>
   );
