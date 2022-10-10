@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html
       lang="en"
-      className="font-size-3 bg-color-2 primary-color-3 scroll-smooth font-sans">
+      className="font-size-3 bg-color-1 primary-color-3 scroll-smooth font-sans">
       <Head>
         <script
           dangerouslySetInnerHTML={{
