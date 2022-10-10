@@ -30,7 +30,7 @@ export default function FeedItem() {
         <img src="./images/feed-1.jpg" alt="feed image" />
       </div>
 
-      <div className="flex justify-between items-center m-2">
+      <div className="flex justify-between items-center m-2 text-lg">
         <div className="flex items-center gap-4">
           <span>
             <i className="bi bi-heart"></i>
@@ -47,43 +47,27 @@ export default function FeedItem() {
         </div>
       </div>
 
-      <div className="liked-by">
-        <span>
-          <Image
-            width={30}
-            height={30}
-            src="/images/profile-12.jpg"
-            alt="Oreol Profile"
-          />
-        </span>
-        <span>
-          <Image
-            width={30}
-            height={30}
-            src="/images/profile-10.jpg"
-            alt="Oreol Profile"
-          />{" "}
-        </span>
-        <span>
-          <Image
-            width={30}
-            height={30}
-            src="/images/profile-10.jpg"
-            alt="Oreol Profile"
-          />{" "}
-        </span>
-        <p>
+      <div className="flex">
+        {/** profiles */}
+        {["profile-12.jpg", "profile-10.jpg", "profile-11.jpg"].map(
+          (item, __) => (
+            <span key={__} className="rounded-full w-6 h-6 overflow-hidden border-2 border-colorWhite flex -ml-3 first:ml-0">
+              <Image width={18} height={18} src={`/images/${item}`} alt={item} />
+            </span>
+          )
+        )}
+        <p className="ml-2">
           Liked by <b>Tykio Blache</b> and <b>122 orthers</b>
         </p>
       </div>
 
-      <div className="caption">
+      <div className="text-sm">
         <p>
           <b>Franky Levy</b> dolor sit amet consectetur adipisicing{" "}
           <span className="hash-tag">#coding</span>.
         </p>
       </div>
-      <div className="comments text-muted">View all 345 commments</div>
+      <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
   );
 }
