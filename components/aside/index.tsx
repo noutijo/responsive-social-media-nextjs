@@ -5,7 +5,7 @@ import AsideBarItem from "./AsideItem"
 export default function Aside() {
   return (
     <>
-      <aside className="h-max sticky top-[2rem] hidden md:block">
+      <aside className="h-max sticky top-[6.5rem] hidden md:block">
         <div className="p-4 flex bg-colorWhite rounded-2xl items-center gap-4 w-full">
           <div className="rounded-full aspect-[1/1] overflow-hidden">
             <Image width={40} height={40} src="/images/me.jpeg" alt="" />

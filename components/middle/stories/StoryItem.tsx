@@ -6,7 +6,7 @@ export default function StoryItem({ data }: { data: storyType }) {
 
   return (
     <div
-      className="p-2 rounded-2xl flex flex-col justify-between items-center text-white text-xs w-full bg-colorDanger relative overflow-hidden story-overlay"
+      className="p-3 rounded-2xl flex flex-col justify-between items-center text-white text-xs w-full bg-colorDanger relative overflow-hidden story-overlay"
       style={{
         background: `url(/images/${story_img}) no-repeat center center/cover`,
       }}>

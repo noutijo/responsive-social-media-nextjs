@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function FeedItem() {
   return (
-    <div className="bg-colorWhite rounded-2xl p-4 my-4">
+    <div className="bg-colorWhite rounded-2xl p-4 my-4 w-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="rounded-full overflow-hidden flex">
@@ -72,7 +72,9 @@ export default function FeedItem() {
             alt="Oreol Profile"
           />{" "}
         </span>
-        
+        <p>
+          Liked by <b>Tykio Blache</b> and <b>122 orthers</b>
+        </p>
       </div>
 
       <div className="caption">

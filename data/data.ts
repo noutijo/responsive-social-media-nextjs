@@ -163,9 +163,4 @@ export const storiesData: storyType[] = [
     profile_img: "profile-17.jpg",
     story_img: "story-5.jpg",
 },
-    {
-    name: "Atangana Meil",
-    profile_img: "profile-20.jpg",
-    story_img: "story-6.jpg",
-},
 ]
