@@ -171,7 +171,7 @@ export const postsData: postType[] = [
     {
         user: {
             name: "Nkemtakeh Celsoppe",
-            profile_img: "profile-15.jpg",
+            profile_img: "profile-16.jpg",
         },
         post_img: "feed-1.jpg",
         like_by_profiles: [""],
@@ -184,7 +184,7 @@ export const postsData: postType[] = [
     {
         user: {
             name: "Oreol Noumodong",
-            profile_img: "profile-16.jpg",
+            profile_img: "profile-15.jpg",
         },
         post_img: "feed-4.jpg",
         like_by_profiles: [""],
