@@ -29,6 +29,7 @@ export default function Feeds() {
 
       <div className="mt-4">
         <FeedItem />
+        <FeedItem />
       </div>
     </>
   );

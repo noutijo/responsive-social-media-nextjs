@@ -1,29 +1,37 @@
 import { storiesData } from "@data/data";
+import Image from "next/image";
 
 export default function FeedItem() {
   return (
-    <div className="bg-colorWhite rounded-2xl p-4">
-      <div className="head">
-        <div className="user">
-          <div className="profile-photo">
-            <img src="./images/profile-4.jpg" alt="" />
+    <div className="bg-colorWhite rounded-2xl p-4 my-4">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <div className="rounded-full overflow-hidden flex">
+            <Image
+              width={30}
+              height={30}
+              src="/images/me.jpeg"
+              alt="Oreol Profile"
+            />
           </div>
-          <div className="info-">
-            <h3>Dika Rose</h3>
-            <small className="text-muted">USA, 12 MINUTES AGO</small>
+          <div className="info-user">
+            <h3 className="text-sm">Dika Rose</h3>
+            <small className="text-colorGray text-xs">
+              USA, 12 minutes ago
+            </small>
           </div>
         </div>
         <span className="edit">
-          <i className="bi bi-ellipsis-h"></i>
+          <i className="bi bi-three-dots"></i>
         </span>
       </div>
-
-      <div className="photo">
-        <img src="./images/feed-1.jpg" alt="" />
+      {/**feeds */}
+      <div className="rounded-2xl overflow-hidden my-3">
+        <img src="./images/feed-1.jpg" alt="feed image" />
       </div>
 
-      <div className="action-buttons">
-        <div className="interaction-buttons">
+      <div className="flex justify-between items-center m-2">
+        <div className="flex items-center gap-4">
           <span>
             <i className="bi bi-heart"></i>
           </span>
@@ -41,13 +49,28 @@ export default function FeedItem() {
 
       <div className="liked-by">
         <span>
-          <img src="./images/profile-10.jpg" alt="" />
+          <Image
+            width={30}
+            height={30}
+            src="/images/profile-12.jpg"
+            alt="Oreol Profile"
+          />
         </span>
         <span>
-          <img src="./images/profile-4.jpg" alt="" />
+          <Image
+            width={30}
+            height={30}
+            src="/images/profile-10.jpg"
+            alt="Oreol Profile"
+          />{" "}
         </span>
         <span>
-          <img src="./images/profile-15.jpg" alt="" />
+          <Image
+            width={30}
+            height={30}
+            src="/images/profile-10.jpg"
+            alt="Oreol Profile"
+          />{" "}
         </span>
         <p>
           Liked by <b>Tykio Blache</b> and <b>122 orthers</b>
