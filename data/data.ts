@@ -173,7 +173,7 @@ export const postsData: postType[] = [
             name: "Nkemtakeh Celsoppe",
             profile_img: "profile-15.jpg",
         },
-        post_img: "feed-1.jpg",
+        post_img: "feed-4.jpg",
         like_by_profiles: [""],
         like_by_name: "Juan Lee",
         post_desc: "dolor sit #adipiscing #elit, #sed tempor incididunt #ut.",
