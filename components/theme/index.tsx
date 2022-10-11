@@ -42,7 +42,7 @@ export default function ThemeSettings() {
 
           <div className="mt-8">
             <h4 className="text-sm font-medium">Background</h4>
-            <div className="flex items-center justify-between mt-1">
+            <div className="flex flex-col md:flex-row items-center justify-between mt-1">
               {/** display all custom bg colors */}
               {bgColorsTheme.map((item, __) => (
                 <ThemeBackgroundColor
