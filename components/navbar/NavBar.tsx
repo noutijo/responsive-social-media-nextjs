@@ -34,6 +34,7 @@ export default function NavBar() {
               htmlFor="create-post">
               Create
             </label>
+            {/** button to display aside bar menu */}
             <div
               className="rounded-full overflow-hidden aspect-[1/1]"
               onClick={showAsideBarMenu}>

@@ -14,7 +14,7 @@ export default function PageTemplate({ title }: { title: string }) {
           <p className="mt-2 text-sm text-center">
             <span>Follow me on Twitter: </span>
             <a
-              className="dark:text-colorWhite font-bold"
+              className="text-colorPrimary font-bold"
               href="https://twitter.com/JuniorOreol"
               target="_blank"
               rel="noopener noreferrer">
