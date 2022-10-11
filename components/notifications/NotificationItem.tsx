@@ -9,7 +9,7 @@ export default function NotificationItem() {
             <Image
               width={50}
               height={50}
-              src={`/images/${"profile-3.jpg"}`}
+              src={`/images/${"profile-12.jpg"}`}
               alt={`${"profile"}`}
             />
           </div>
