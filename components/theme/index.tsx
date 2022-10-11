@@ -1,5 +1,5 @@
-import ThemeFontSize from "./ThemeFontSize"
-import ThemePrimaryColor from "./ThemePrimaryColor"
+import ThemeFontSize from "./ThemeFontSize";
+import ThemePrimaryColor from "./ThemePrimaryColor";
 import ThemeBackgroundColor from "./ThemeBackgroundColor";
 
 export default function ThemeSettings() {
@@ -61,55 +61,53 @@ export default function ThemeSettings() {
 }
 
 // font size theme
-const fontSizes =[
-                  "font-size-1",
-                  "font-size-2",
-                  "font-size-3",
-                  "font-size-4",
-                  "font-size-5",
-                ]
+const fontSizes = [
+  "font-size-1",
+  "font-size-2",
+  "font-size-3",
+  "font-size-4",
+  "font-size-5",
+];
 
 // primary colors theme
-const primaryColorsTheme =[
-                 {
-                    class_name:"primary-color-1",
-                    color:"hsl(252, 75%, 60%)"
-                 },
-                 {
-                    class_name:"primary-color-2",
-                    color:"hsl(52, 75%, 60%)"
-                 },
-                 {
-                    class_name:"primary-color-3",
-                    color:"hsl(352, 75%, 60%)"
-                 },
-                 {
-                    class_name:"primary-color-4",
-                    color:"hsl(152, 75%, 60%)"
-                 },
-                 {
-                    class_name:"primary-color-5",
-                    color:"hsl(202, 75%, 60%)"
-                 },
-                ]
+const primaryColorsTheme = [
+  {
+    class_name: "primary-color-1",
+    color: "hsl(252, 75%, 60%)",
+  },
+  {
+    class_name: "primary-color-2",
+    color: "hsl(52, 75%, 60%)",
+  },
+  {
+    class_name: "primary-color-3",
+    color: "hsl(352, 75%, 60%)",
+  },
+  {
+    class_name: "primary-color-4",
+    color: "hsl(152, 75%, 60%)",
+  },
+  {
+    class_name: "primary-color-5",
+    color: "hsl(202, 75%, 60%)",
+  },
+];
 
 // bg colors theme
-const bgColorsTheme =[
-                 {
-                    class_name:"bg-color-1",
-                    color:"white",
-                    themeName:"Light"
-                 },
-                 {
-                    class_name:"bg-color-2",
-                    color:"hsl(252, 30%, 17%)",
-                    themeName:"Dim"
-                 },
-                 {
-                    class_name:"bg-color-3",
-                    color:"hsl(252, 30%, 10%)",
-                    themeName:"Light Out"
-                 },
-                ]
-
-    
+const bgColorsTheme = [
+  {
+    class_name: "bg-color-1",
+    color: "white",
+    themeName: "Light",
+  },
+  {
+    class_name: "bg-color-2",
+    color: "hsl(252, 30%, 17%)",
+    themeName: "Dim",
+  },
+  {
+    class_name: "bg-color-3",
+    color: "hsl(252, 30%, 10%)",
+    themeName: "Light Out",
+  },
+];

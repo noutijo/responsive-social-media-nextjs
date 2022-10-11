@@ -28,7 +28,7 @@ export default function ThemePrimaryColor({
           background: `${color}`,
         }}
         className={`${class_name} w-8 h-8 ${
-          currentPrimaryColor === class_name ? "border-2 bg-white" : ""
+          currentPrimaryColor === class_name ? "border-4 bg-white" : ""
         } rounded-full cursor-pointer`}
         onClick={setPrimaryColor}></span>
     </>
