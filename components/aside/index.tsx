@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { menuItemsData } from "@data/data"
-import AsideBarItem from "./AsideItem"
-import { useDrawer } from "@hooks/AsideBarHook"
+import { menuItemsData } from "@data/data";
+import AsideBarItem from "./AsideItem";
+import { useDrawer } from "@hooks/AsideBarHook";
 
 export default function Aside() {
   // get drawer context
@@ -17,7 +17,7 @@ export default function Aside() {
   return (
     <>
       <aside
-        className={`fixed h-screen bg-colorLight top-0 p-4 w-[84vw] land sm:landscape:w-[47vw] overflow-y-auto  md:landscape:w-max !left-[-0%] md:left-[0%] animate-showmenu md:animate-none lg:overflow-y-hidden md:w-max md:bg-transparent md:p-0 md:h-max z-[10] md:sticky md:top-[6.5rem] md:block ${
+        className={`fixed h-screen bg-colorLight top-0 p-4 w-[84vw] land sm:landscape:w-[47vw] overflow-y-auto  md:landscape:w-max !left-[-0%] md:left-[0%] animate-showmenu md:animate-none lg:overflow-y-hidden md:w-max md:bg-transparent md:p-0 md:h-max z-[10] md:z-[1] md:sticky md:top-[6.5rem] md:block ${
           drawer.isopen ? "block" : "hidden"
         }`}>
         <div className="p-4 flex bg-colorWhite rounded-2xl items-center gap-4 w-full">
