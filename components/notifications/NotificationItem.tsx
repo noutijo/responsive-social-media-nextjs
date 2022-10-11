@@ -7,9 +7,9 @@ export default function NotificationItem() {
         <div className="flex gap-2 items-center justify-between">
           <div className="rounded-full overflow-hidden flex">
             <Image
-              width={35}
-              height={35}
-              src={`/images/${"profile-12.jpg"}`}
+              width={50}
+              height={50}
+              src={`/images/${"profile-3.jpg"}`}
               alt={`${"profile"}`}
             />
           </div>
