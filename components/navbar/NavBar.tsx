@@ -1,11 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useDrawer } from "@hooks/AsideBarHook";
 
 export default function NavBar() {
+  // get drawer contex
+  const drawer = useDrawer()
+
+  //handle displaying drawer
+  const showAsideBarMenu = () => {
+    drawer.setMenuStatus((state) => {
+      return !state
+    })
+  }
+
   return (
     <>
       <nav className="sticky w-screen bg-colorWhite p-[0.7rem_0] top-0 z-10">
-        <div className="w-[92vw] md:w-[80vw] m-auto flex justify-between items-center">
+        <div className="w-[92vw] lg:w-[80vw] m-auto flex justify-between items-center">
           <Link href={"/"}>
             <h2 className="font-bold text-md cursor-pointer">nooutidev</h2>
           </Link>
@@ -23,7 +34,9 @@ export default function NavBar() {
               htmlFor="create-post">
               Create
             </label>
-            <div className="rounded-full overflow-hidden aspect-[1/1]">
+            <div
+              className="rounded-full overflow-hidden aspect-[1/1]"
+              onClick={showAsideBarMenu}>
               <Image
                 width={36}
                 height={36}

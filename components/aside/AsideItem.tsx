@@ -39,7 +39,7 @@ export default function AsideBarItem({
               )}
             </i>
           </span>
-          <h3 className="font-medium">{title}</h3>
+          <h3 className="font-medium md:hidden lg:block">{title}</h3>
         </a>
       </Link>
     </>
