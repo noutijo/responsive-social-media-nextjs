@@ -2,7 +2,7 @@ export default function NotificationsSkeleton() {
   return (
     <>
       {/** get all posts/feeds and display*/}
-      {["", "", "", "", ""].map((item, __) => (
+      {["", "", "", "", ""].map((_, __) => (
         <div key={__} className="bg-colorWhite rounded-md p-4 w-full mx-auto">
           <div className="animate-pulse flex space-x-4 items-center">
             <div className="rounded-full bg-colorLight h-10 w-10"></div>
