@@ -47,7 +47,7 @@ export default function Aside() {
           ))}
         </div>
 
-        <div className="hidden lg:block mt-4 w-full text-center bg-colorPrimary text-white px-6 py-3 rounded-full cursor-pointer font-medium transition duration-30 ease-out inline-block text-sm">
+        <div className="hidden lg:block mt-4 w-full text-center bg-colorPrimary text-white px-6 py-3 rounded-full cursor-pointer font-medium transition duration-30 ease-out text-sm">
           <label className="cursor-pointer" htmlFor="create-post">
             Create Post
           </label>
