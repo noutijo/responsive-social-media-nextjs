@@ -19,7 +19,6 @@ export default function AllNotifications() {
     setLoading(true);
     let data = await axios.request(reqOptions);
     setLoading(false);
-    console.log(data);
   };
 
   return (
