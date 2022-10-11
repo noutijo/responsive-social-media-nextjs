@@ -29,8 +29,8 @@ export default function ThemeBackgroundColor({
         style={{
           background: `${color}`,
         }}
-        className={`${class_name} flex p-4 items-center font-medium rounded-lg cursor-pointer${
-          currentBgColor === class_name ? "border-2 bg-colorPrimary" : ""
+        className={`${class_name} flex p-4 items-center font-medium rounded-lg border-2 cursor-pointer${
+          currentBgColor === class_name ? "bg-colorPrimary" : "bg-colorGray"
         } cursor-pointer`}
         onClick={setBgColor}>
         <span className="w-8 h-8 border-colorGray border-2 rounded-full mr-4"></span>
