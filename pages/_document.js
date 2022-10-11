@@ -2,13 +2,49 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html
-      lang="en"
-      className="font-size-3 bg-color-2 primary-color-3 scroll-smooth font-sans">
+    <Html lang="en" className="scroll-smooth font-sans">
       <Head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `try { if ((localStorage.theme) && (localStorage.theme === 'light')) {document.documentElement.classList.add('light')} else {document.documentElement.classList.add('dark')}} catch (__) {}`,
+            __html: `
+      
+    //init font size
+    let localFontSize = localStorage.fontSize;
+
+    if (localFontSize) {
+        document.documentElement.classList.add(localFontSize);
+        //document.getElementsByClassName(localFontSize.toString()).classList.add("active");
+    }
+    else {
+      localStorage.fontSize ='font-size-3';
+      document.documentElement.classList.add('font-size-3');
+      //document.getElementsByClassName(localFontSize.toString()).classList.add("active");
+    }
+
+     
+    //init primary color theme
+    let localColorPrimary = localStorage.colorPrimary;
+
+    if (localColorPrimary) {
+        document.documentElement.classList.add(localColorPrimary);
+    }
+    else {
+      localStorage.colorPrimary ='primary-color-1';
+      document.documentElement.classList.add('primary-color-1');
+    }
+
+    //init bg theme
+    let localBgColor = localStorage.bgColor;
+
+    if (localBgColor) {
+        document.documentElement.classList.add(localBgColor);
+    }
+    else {
+      localStorage.bgColor ='bg-color-1';
+      document.documentElement.classList.add('bg-color-1');
+    }
+            
+            `,
           }}></script>
         <meta charSet="utf-8" />
         <link rel="icon" type="image/png" href="/favicon.png" />

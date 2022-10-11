@@ -21,6 +21,7 @@ module.exports = {
         colorDanger: "var(--color-danger)",
         colorDark: "var(--color-dark)",
         colorBlack: "var(--color-black)",
+        "bg-color-1": "hsl(252, 75%, 60%)",
       },
     },
   },

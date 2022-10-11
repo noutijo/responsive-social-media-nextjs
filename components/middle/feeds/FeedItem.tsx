@@ -67,6 +67,7 @@ export default function FeedItem({ data }: { data: postType }) {
             <Image width={18} height={18} src={`/images/${item}`} alt={item} />
           </span>
         ))}
+
         <p className="ml-2">
           Liked by <b>{like_by_name}</b> and <b>{total_likes} orthers</b>
         </p>
@@ -77,6 +78,7 @@ export default function FeedItem({ data }: { data: postType }) {
           <b>{like_by_name}</b> {post_desc}
         </p>
       </div>
+      
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
   );
