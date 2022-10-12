@@ -18,7 +18,7 @@ export default function NotificationItem({ data }: { data: notificationType }) {
           <div className="text-sm w-full">
             <b className="mr-2">{name}</b>
             {message}
-            <small className="text-colorGray ml-2">{date} AGO</small>
+            <small className="text-colorGray ml-2">{date} ago</small>
           </div>
           <span className="edit">
             <i className="bi bi-three-dots"></i>
