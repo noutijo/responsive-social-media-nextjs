@@ -15,7 +15,7 @@ export default function FeedItem({ data }: { data: postType }) {
   } = data
 
   const [isLike, setIsLike] = useState<boolean>(false)
-  // like or unlike post
+  // simulate like or unlike post
   const likePost = () => {
     setIsLike(!isLike)
   }
