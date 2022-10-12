@@ -15,7 +15,7 @@ export default function NotificationItem({ data }: { data: notificationType }) {
               alt={`${"profile"}`}
             />
           </div>
-          <div className="text-sm w-full">
+          <div className="text-sm w-full ml-2">
             <b className="mr-2">{name}</b>
             {message}
             <small className="text-colorGray ml-2">{date} ago</small>
