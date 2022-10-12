@@ -9,6 +9,8 @@ export default function Feeds() {
         {/** search bar -feeds */}
         <div className="rounded-full overflow-hidden flex">
           <Image
+            placeholder="blur"
+            blurDataURL={`/images/me.jpeg`}
             width={36}
             height={36}
             src="/images/me.jpeg"
@@ -35,5 +37,5 @@ export default function Feeds() {
         ))}{" "}
       </div>
     </>
-  )
+  );
 }
