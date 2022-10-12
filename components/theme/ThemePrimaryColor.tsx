@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react";
-
 type propsType = {
   primaryColorClassName: string;
   currentPrimaryColor: string;
   color: string;
   setPrimaryColor: (primaryColorClassName: string) => void;
-};
+}
 
 export default function ThemePrimaryColor({
   primaryColorClassName,
@@ -26,5 +24,5 @@ export default function ThemePrimaryColor({
         } rounded-full cursor-pointer`}
         onClick={() => setPrimaryColor(primaryColorClassName)}></span>
     </>
-  );
+  )
 }

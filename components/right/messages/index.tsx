@@ -1,5 +1,5 @@
-import MessageItem from "./MessageItem";
-import { messagesData } from "@data/data";
+import MessageItem from "./MessageItem"
+import { messagesData } from "@data/data"
 
 export default function AllMessages() {
   return (
@@ -37,5 +37,5 @@ export default function AllMessages() {
         ))}
       </div>
     </>
-  );
+  )
 }

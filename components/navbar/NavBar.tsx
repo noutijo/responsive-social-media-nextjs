@@ -1,17 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useDrawer } from "@hooks/AsideBarHook";
+import Image from "next/image"
+import Link from "next/link"
+import { useDrawer } from "@hooks/AsideBarHook"
 
 export default function NavBar() {
   // get drawer contex
-  const drawer = useDrawer();
+  const drawer = useDrawer()
 
   //handle displaying drawer
   const showAsideBarMenu = () => {
     drawer.setMenuStatus((state) => {
-      return !state;
-    });
-  };
+      return !state
+    })
+  }
 
   return (
     <>
@@ -59,5 +59,5 @@ export default function NavBar() {
         </div>
       </nav>
     </>
-  );
+  )
 }

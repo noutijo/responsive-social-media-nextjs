@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "next/head"
 
 export default function PageTemplate({ title }: { title: string }) {
   return (
@@ -35,5 +35,5 @@ export default function PageTemplate({ title }: { title: string }) {
         </div>
       </div>
     </>
-  );
+  )
 }

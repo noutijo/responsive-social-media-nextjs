@@ -2,7 +2,7 @@ import Image from "next/image"
 import { storyType } from "@/types/types"
 
 export default function StoryItem({ data }: { data: storyType }) {
-    const { name, profile_img, story_img } = data
+  const { name, profile_img, story_img } = data
 
   return (
     <div
@@ -12,11 +12,11 @@ export default function StoryItem({ data }: { data: storyType }) {
       }}>
       <div className="rounded-full overflow-hidden flex self-start border-2 border-colorPrimary">
         <Image
-              width={30}
-              height={30}
-              src={`/images/${profile_img}`}
-              alt={`${"profile"}`}
-            />
+          width={30}
+          height={30}
+          src={`/images/${profile_img}`}
+          alt={`${"profile"}`}
+        />
       </div>
       <p className="z-[2] font-medium">{name}</p>
     </div>

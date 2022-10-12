@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
   return (
@@ -9,37 +9,37 @@ export default function Document() {
             __html: `
       
     //init font size
-    let localFontSize = localStorage.fontSize;
+    let localFontSize = localStorage.fontSize
 
     if (localFontSize) {
-        document.documentElement.classList.add(localFontSize);
+        document.documentElement.classList.add(localFontSize)
     }
     else {
-      localStorage.fontSize ='font-size-3';
-      document.documentElement.classList.add('font-size-3');
+      localStorage.fontSize ='font-size-3'
+      document.documentElement.classList.add('font-size-3')
     }
 
      
     //init primary color theme
-    let localColorPrimary = localStorage.colorPrimary;
+    let localColorPrimary = localStorage.colorPrimary
 
     if (localColorPrimary) {
-        document.documentElement.classList.add(localColorPrimary);
+        document.documentElement.classList.add(localColorPrimary)
     }
     else {
-      localStorage.colorPrimary ='primary-color-3';
-      document.documentElement.classList.add('primary-color-3');
+      localStorage.colorPrimary ='primary-color-3'
+      document.documentElement.classList.add('primary-color-3')
     }
 
     //init bg theme
-    let localBgColor = localStorage.bgColor;
+    let localBgColor = localStorage.bgColor
 
     if (localBgColor) {
-        document.documentElement.classList.add(localBgColor);
+        document.documentElement.classList.add(localBgColor)
     }
     else {
-      localStorage.bgColor ='bg-color-1';
-      document.documentElement.classList.add('bg-color-1');
+      localStorage.bgColor ='bg-color-1'
+      document.documentElement.classList.add('bg-color-1')
     }
        
             `,
@@ -64,5 +64,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }

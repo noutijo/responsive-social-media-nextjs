@@ -2,7 +2,8 @@ type propsType = {
   themeSize: string;
   currentFontSize: string;
   setFontSize: (themeSize: string) => void;
-};
+}
+
 export default function ThemeFontSize({
   themeSize,
   setFontSize,
@@ -18,5 +19,5 @@ export default function ThemeFontSize({
         } rounded-full cursor-pointer`}
         onClick={() => setFontSize(themeSize)}></span>
     </>
-  );
+  )
 }

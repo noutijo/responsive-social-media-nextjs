@@ -1,5 +1,5 @@
-import StoryItem from "./StoryItem";
-import { storiesData } from "@data/data";
+import StoryItem from "./StoryItem"
+import { storiesData } from "@data/data"
 
 export default function Stories() {
   return (
@@ -9,5 +9,5 @@ export default function Stories() {
         <StoryItem key={__} data={item} />
       ))}
     </div>
-  );
+  )
 }

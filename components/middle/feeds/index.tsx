@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { postsData } from "@data/data";
-import FeedItem from "./FeedItem";
+import Image from "next/image"
+import { postsData } from "@data/data"
+import FeedItem from "./FeedItem"
 
 export default function Feeds() {
   return (
@@ -18,7 +18,7 @@ export default function Feeds() {
         <input
           className="w-full bg-transparent outline-none text-colorDark placeholder:text-colorGray text-sm"
           type="text"
-          placeholder="What's your nind, Oreol?"
+          placeholder="What's your mind ?"
           id="create-post"
         />
         <input
@@ -35,5 +35,5 @@ export default function Feeds() {
         ))}{" "}
       </div>
     </>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { messageType } from "@/types/types";
+import Image from "next/image"
+import { messageType } from "@/types/types"
 
 export default function MessageItem({ data }: { data: messageType }) {
   const {user, message}=data
@@ -28,5 +28,5 @@ export default function MessageItem({ data }: { data: messageType }) {
         </div>
       </div>
     </>
-  );
+  )
 }

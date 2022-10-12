@@ -1,6 +1,6 @@
-import { postType } from "@/types/types";
-import Image from "next/image";
-import { useState } from "react";
+import { postType } from "@/types/types"
+import Image from "next/image"
+import { useState } from "react"
 
 export default function FeedItem({ data }: { data: postType }) {
   const {
@@ -12,13 +12,13 @@ export default function FeedItem({ data }: { data: postType }) {
     total_likes,
     location,
     date,
-  } = data;
+  } = data
 
-  const [isLike, setIsLike] = useState<boolean>(false);
+  const [isLike, setIsLike] = useState<boolean>(false)
   // like or unlike post
   const likePost = () => {
-    setIsLike(!isLike);
-  };
+    setIsLike(!isLike)
+  }
 
   return (
     <div className="bg-colorWhite rounded-2xl p-4 my-4 first:mt-0 w-full">
@@ -92,5 +92,5 @@ export default function FeedItem({ data }: { data: postType }) {
 
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
-  );
+  )
 }

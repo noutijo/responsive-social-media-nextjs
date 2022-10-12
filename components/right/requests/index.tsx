@@ -1,5 +1,5 @@
-import RequestItem from "./RequestItem";
-import { mutualFriendsData } from "@data/data";
+import RequestItem from "./RequestItem"
+import { mutualFriendsData } from "@data/data"
 
 export default function FriendsRequests() {
   return (
@@ -13,5 +13,5 @@ export default function FriendsRequests() {
         ))}
       </div>
     </>
-  );
+  )
 }

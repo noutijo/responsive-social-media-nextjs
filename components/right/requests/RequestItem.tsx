@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { requestType } from "@/types/types";
+import Image from "next/image"
+import { requestType } from "@/types/types"
 
 export default function RequestItem({ data }: { data: requestType }) {
-  const { name, profile_img, mutual_friends } = data;
+  const { name, profile_img, mutual_friends } = data
   return (
     <>
       <div className="bg-colorWhite p-4 rounded-2xl mb-3">
@@ -32,5 +32,5 @@ export default function RequestItem({ data }: { data: requestType }) {
         </div>
       </div>
     </>
-  );
+  )
 }

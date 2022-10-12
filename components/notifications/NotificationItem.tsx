@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { notificationType } from "@/types/types";
+import Image from "next/image"
+import { notificationType } from "@/types/types"
 
 export default function NotificationItem({ data }: { data: notificationType }) {
-  const { name, profile_img, message, date } = data;
+  const { name, profile_img, message, date } = data
   return (
     <>
       <div className="p-4 mt-1">
@@ -26,5 +26,5 @@ export default function NotificationItem({ data }: { data: notificationType }) {
         </div>
       </div>
     </>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import { menuItemType } from "@/types/types";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { menuItemType } from "@/types/types"
+import Link from "next/link"
+import { useRouter } from "next/router"
+import { useEffect, useState } from "react"
 import { useDrawer } from "@hooks/AsideBarHook"
 
 export default function AsideBarItem({
@@ -10,25 +10,25 @@ export default function AsideBarItem({
   url,
   notifications = 0,
 }: menuItemType) {
-  const [isSelected, SetIsSelected] = useState<string>("init");
+  const [isSelected, SetIsSelected] = useState<string>("init")
   const [totalNotifications, SetIsTotalNotifications] =
-    useState<number>(notifications);
-  const router = useRouter();
+    useState<number>(notifications)
+  const router = useRouter()
 
   // get drawer contex
-  const drawer = useDrawer();
+  const drawer = useDrawer()
 
   //handle displaying drawer
   const showAsideBarMenu = () => {
     drawer.setMenuStatus((state) => {
-      return !state;
-    });
-  };
+      return !state
+    })
+  }
 
   useEffect(() => {
     //get current path and add to state as selected menu item
-    SetIsSelected(router.pathname.slice(1).toString());
-  }, [router.pathname]);
+    SetIsSelected(router.pathname.slice(1).toString())
+  }, [router.pathname])
 
   return (
     <>
@@ -38,8 +38,8 @@ export default function AsideBarItem({
             url.slice(1) === isSelected ? "active-menu" : ""
           }`}
           onClick={() => {
-            showAsideBarMenu();
-            SetIsTotalNotifications(0);
+            showAsideBarMenu()
+            SetIsTotalNotifications(0)
           }}>
           <span>
             <i className={`bi ${iconName} text-colorGray ml-8 relative`}>
@@ -56,5 +56,5 @@ export default function AsideBarItem({
         </a>
       </Link>
     </>
-  );
+  )
 }

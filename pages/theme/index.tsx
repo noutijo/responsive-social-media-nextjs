@@ -1,6 +1,6 @@
 import PrincipalLayout from "@components/layouts/PrincipalLayout"
-import ThemeSettings from "@components/theme";
-import Head from "next/head";
+import ThemeSettings from "@components/theme"
+import Head from "next/head"
 
 export default function Theme() {
   return (

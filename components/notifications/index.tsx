@@ -1,26 +1,27 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { notificationsData } from "@data/data";
-import NotificationItem from "./NotificationItem";
-import NotificationsSkeleton from "./NotificationsSkeleton";
+import axios from "axios"
+import { useEffect, useState } from "react"
+import { notificationsData } from "@data/data"
+import NotificationItem from "./NotificationItem"
+import NotificationsSkeleton from "./NotificationsSkeleton"
 
 export default function AllNotifications() {
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    fetchData()
+  }, [])
 
   const fetchData = async () => {
     let reqOptions = {
       url: "https://jsonplaceholder.typicode.com/photos",
       method: "GET",
-    };
-
-    setLoading(true);
-    let data = await axios.request(reqOptions);
-    setLoading(false);
-  };
+    }
+    
+    //simulate skeleton
+    setLoading(true)
+    await axios.request(reqOptions)
+    setLoading(false)
+  }
 
   return (
     <>
@@ -41,5 +42,5 @@ export default function AllNotifications() {
         </div>
       </div>
     </>
-  );
+  )
 }

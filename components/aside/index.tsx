@@ -1,18 +1,18 @@
-import Image from "next/image";
-import { menuItemsData } from "@data/data";
-import AsideBarItem from "./AsideItem";
-import { useDrawer } from "@hooks/AsideBarHook";
+import Image from "next/image"
+import { menuItemsData } from "@data/data"
+import AsideBarItem from "./AsideItem"
+import { useDrawer } from "@hooks/AsideBarHook"
 
 export default function Aside() {
   // get drawer context
-  const drawer = useDrawer();
+  const drawer = useDrawer()
 
   // display aside bar menu
   const hideAsideBarMenu = () => {
     drawer.setMenuStatus((state) => {
-      return !state;
-    });
-  };
+      return !state
+    })
+  }
 
   return (
     <>
@@ -54,5 +54,5 @@ export default function Aside() {
         </div>
       </aside>
     </>
-  );
+  )
 }

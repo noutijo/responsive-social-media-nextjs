@@ -1,5 +1,5 @@
-import AllMessages from "./messages";
-import FriendsRequests from "./requests";
+import AllMessages from "./messages"
+import FriendsRequests from "./requests"
 
 export default function RightSide() {
   return (
@@ -11,5 +11,5 @@ export default function RightSide() {
 
       </div>
     </>
-  );
+  )
 }

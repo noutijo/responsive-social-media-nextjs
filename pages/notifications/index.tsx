@@ -1,6 +1,6 @@
-import PrincipalLayout from "@components/layouts/PrincipalLayout";
-import AllNotifications from "@components/notifications";
-import Head from "next/head";
+import PrincipalLayout from "@components/layouts/PrincipalLayout"
+import AllNotifications from "@components/notifications"
+import Head from "next/head"
 
 export default function Notifications() {
   return (
@@ -12,7 +12,7 @@ export default function Notifications() {
 
       <AllNotifications />
     </>
-  );
+  )
 }
 
-Notifications.Layout = PrincipalLayout;
+Notifications.Layout = PrincipalLayout

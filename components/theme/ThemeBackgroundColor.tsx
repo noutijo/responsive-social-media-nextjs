@@ -4,7 +4,7 @@ type propsType = {
   color: string;
   themeName: string;
   setBgColor: (bgClassName: string) => void;
-};
+}
 
 export default function ThemeBackgroundColor({
   bgClassName,
@@ -29,5 +29,5 @@ export default function ThemeBackgroundColor({
         <h5 className="text-colorGray">{themeName} </h5>
       </div>
     </>
-  );
+  )
 }
