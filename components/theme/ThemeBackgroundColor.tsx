@@ -1,38 +1,30 @@
-import { useEffect, useState } from "react";
-
-export default function ThemeBackgroundColor({
-  class_name,
-  color,
-  themeName
-}: {
-  class_name: string;
+type propsType = {
+  bgClassName: string;
+  currentBgColor: string;
   color: string;
   themeName: string;
-}) {
-  const [currentBgColor, setCurrentBgColor] = useState<string>("");
+  setBgColor: (bgClassName: string) => void;
+};
 
-  //change font size theme
-  const setBgColor = () => {
-    localStorage.bgColor = class_name;
-    document.documentElement.classList.remove(currentBgColor.toString());
-    document.documentElement.classList.add(class_name);
-
-    setCurrentBgColor(class_name);
-  };
-
-  useEffect(() => {
-    setCurrentBgColor(localStorage.bgColor);
-  });
+export default function ThemeBackgroundColor({
+  bgClassName,
+  color,
+  themeName,
+  setBgColor,
+  currentBgColor,
+}: propsType) {
   return (
     <>
       <div
         style={{
           background: `${color}`,
         }}
-        className={`${class_name} flex p-4 items-center font-medium rounded-lg border-2 ${
-          currentBgColor === class_name ? "border-colorPrimary" : "border-colorGray"
+        className={`${bgClassName} flex p-4 items-center font-medium rounded-lg border-2 ${
+          currentBgColor === bgClassName
+            ? "border-colorPrimary"
+            : "border-colorGray"
         } cursor-pointer`}
-        onClick={setBgColor}>
+        onClick={() => setBgColor(bgClassName)}>
         <span className="w-8 h-8 border-colorGray border-2 rounded-full mr-4"></span>
         <h5 className="text-colorGray">{themeName} </h5>
       </div>

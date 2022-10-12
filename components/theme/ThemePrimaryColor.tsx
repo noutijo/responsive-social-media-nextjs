@@ -1,36 +1,30 @@
 import { useEffect, useState } from "react";
 
-export default function ThemePrimaryColor({
-  class_name,
-  color,
-}: {
-  class_name: string;
+type propsType = {
+  primaryColorClassName: string;
+  currentPrimaryColor: string;
   color: string;
-}) {
-  const [currentPrimaryColor, setCurrentPrimaryColor] = useState<string>("");
+  setPrimaryColor: (primaryColorClassName: string) => void;
+};
 
-  //change font size theme
-  const setPrimaryColor = () => {
-    localStorage.colorPrimary = class_name;
-    document.documentElement.classList.remove(currentPrimaryColor.toString());
-    document.documentElement.classList.add(class_name);
-
-    setCurrentPrimaryColor(class_name);
-  };
-
-  useEffect(() => {
-    setCurrentPrimaryColor(localStorage.colorPrimary);
-  });
+export default function ThemePrimaryColor({
+  primaryColorClassName,
+  currentPrimaryColor,
+  color,
+  setPrimaryColor,
+}: propsType) {
   return (
     <>
       <span
         style={{
           background: `${color}`,
         }}
-        className={`${class_name} w-8 h-8 ${
-          currentPrimaryColor === class_name ? "border-4 bg-white" : ""
+        className={`${primaryColorClassName} w-8 h-8 ${
+          currentPrimaryColor === primaryColorClassName
+            ? "border-4 bg-colorGray"
+            : ""
         } rounded-full cursor-pointer`}
-        onClick={setPrimaryColor}></span>
+        onClick={() => setPrimaryColor(primaryColorClassName)}></span>
     </>
   );
 }

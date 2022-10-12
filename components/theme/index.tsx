@@ -1,8 +1,43 @@
 import ThemeFontSize from "./ThemeFontSize";
 import ThemePrimaryColor from "./ThemePrimaryColor";
 import ThemeBackgroundColor from "./ThemeBackgroundColor";
+import { useEffect, useState } from "react";
 
 export default function ThemeSettings() {
+  const [currentFontSize, setCurrentFontSize] = useState<string>("");
+  const [currentBgColor, setCurrentBgColor] = useState<string>("");
+  const [currentPrimaryColor, setCurrentPrimaryColor] = useState<string>("");
+
+  //change font size theme
+  const setFontSize = (themeSize: string) => {
+    localStorage.fontSize = themeSize;
+    document.documentElement.classList.remove(currentFontSize.toString());
+    document.documentElement.classList.add(themeSize);
+    setCurrentFontSize(themeSize);
+  };
+
+  //change font size theme
+  const setBgColor = (bgClassName: string) => {
+    localStorage.bgColor = bgClassName;
+    document.documentElement.classList.remove(currentBgColor.toString());
+    document.documentElement.classList.add(bgClassName);
+    setCurrentBgColor(bgClassName);
+  };
+
+  //change font size theme
+  const setPrimaryColor = (primaryColorClassName: string) => {
+    localStorage.colorPrimary = primaryColorClassName;
+    document.documentElement.classList.remove(currentPrimaryColor.toString());
+    document.documentElement.classList.add(primaryColorClassName);
+    setCurrentPrimaryColor(primaryColorClassName);
+  };
+
+  useEffect(() => {
+    setCurrentFontSize(localStorage.fontSize);
+    setCurrentBgColor(localStorage.bgColor);
+    setCurrentPrimaryColor(localStorage.colorPrimary);
+  }, []);
+
   return (
     <>
       <div className="w-full">
@@ -19,7 +54,12 @@ export default function ThemeSettings() {
               <div className="bg-colorSecondary h-1 w-full mx-1 flex justify-between items-center">
                 {/** display all custom sizes */}
                 {fontSizes.map((themeSize, __) => (
-                  <ThemeFontSize key={__} themeSize={themeSize} />
+                  <ThemeFontSize
+                    key={__}
+                    currentFontSize={currentFontSize}
+                    setFontSize={setFontSize}
+                    themeSize={themeSize}
+                  />
                 ))}
               </div>
               <h3 className="text-lg">Aa</h3>
@@ -33,7 +73,9 @@ export default function ThemeSettings() {
               {primaryColorsTheme.map((item, __) => (
                 <ThemePrimaryColor
                   key={__}
-                  class_name={item.class_name}
+                  primaryColorClassName={item.primaryColorClassName}
+                  currentPrimaryColor={currentPrimaryColor}
+                  setPrimaryColor={setPrimaryColor}
                   color={item.color}
                 />
               ))}
@@ -47,7 +89,9 @@ export default function ThemeSettings() {
               {bgColorsTheme.map((item, __) => (
                 <ThemeBackgroundColor
                   key={__}
-                  class_name={item.class_name}
+                  bgClassName={item.bgClassName}
+                  setBgColor={setBgColor}
+                  currentBgColor={currentBgColor}
                   color={item.color}
                   themeName={item.themeName}
                 />
@@ -72,23 +116,23 @@ const fontSizes = [
 // primary colors theme
 const primaryColorsTheme = [
   {
-    class_name: "primary-color-1",
+    primaryColorClassName: "primary-color-1",
     color: "hsl(252, 75%, 60%)",
   },
   {
-    class_name: "primary-color-2",
+    primaryColorClassName: "primary-color-2",
     color: "hsl(52, 75%, 60%)",
   },
   {
-    class_name: "primary-color-3",
+    primaryColorClassName: "primary-color-3",
     color: "hsl(352, 75%, 60%)",
   },
   {
-    class_name: "primary-color-4",
+    primaryColorClassName: "primary-color-4",
     color: "hsl(152, 75%, 60%)",
   },
   {
-    class_name: "primary-color-5",
+    primaryColorClassName: "primary-color-5",
     color: "hsl(202, 75%, 60%)",
   },
 ];
@@ -96,17 +140,17 @@ const primaryColorsTheme = [
 // bg colors theme
 const bgColorsTheme = [
   {
-    class_name: "bg-color-1",
+    bgClassName: "bg-color-1",
     color: "white",
     themeName: "Light",
   },
   {
-    class_name: "bg-color-2",
+    bgClassName: "bg-color-2",
     color: "hsl(252, 30%, 17%)",
     themeName: "Dim",
   },
   {
-    class_name: "bg-color-3",
+    bgClassName: "bg-color-3",
     color: "hsl(252, 30%, 10%)",
     themeName: "Light Out",
   },
