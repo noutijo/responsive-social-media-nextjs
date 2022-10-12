@@ -1,5 +1,6 @@
 import { postType } from "@/types/types";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function FeedItem({ data }: { data: postType }) {
   const {
@@ -12,6 +13,12 @@ export default function FeedItem({ data }: { data: postType }) {
     location,
     date,
   } = data;
+
+  const [isLike, setIsLike] = useState<boolean>(false);
+  // like or unlike post
+  const likePost = () => {
+    setIsLike(!isLike);
+  };
 
   return (
     <div className="bg-colorWhite rounded-2xl p-4 my-4 first:mt-0 w-full">
@@ -43,8 +50,12 @@ export default function FeedItem({ data }: { data: postType }) {
 
       <div className="flex justify-between items-center m-2 text-lg">
         <div className="flex items-center gap-4">
-          <span>
-            <i className="bi bi-heart"></i>
+          <span onClick={likePost} className="cursor-pointer">
+            {isLike ? (
+              <i className={`bi bi-heart-fill text-colorPrimary`}></i>
+            ) : (
+              <i className={`bi bi-heart`}></i>
+            )}
           </span>
           <span>
             <i className="bi bi-chat-dots"></i>
