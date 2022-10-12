@@ -46,7 +46,7 @@ export const menuItemsData: menuItemType[] = [
     },
 ]
 
-//messages data
+//messages datas
 export const messagesData: messageType[] = [
     {
         user: {
@@ -116,8 +116,7 @@ export const messagesData: messageType[] = [
     },
 ]
 
-
-//mutual friends data
+//mutual friends datas
 export const mutualFriendsData: requestType[] = [
     {
         name: "Mougnol Herman",
@@ -165,8 +164,7 @@ export const storiesData: storyType[] = [
     },
 ]
 
-
-//posts data
+//posts datas
 export const postsData: postType[] = [
     {
         user: {
@@ -261,7 +259,7 @@ export const postsData: postType[] = [
     },
 ]
 
-//mutual friends data
+//mutual friends datas
 export const notificationsData: notificationType[] = [
     {
         name: "Maelle E.",

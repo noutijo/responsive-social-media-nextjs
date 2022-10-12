@@ -39,4 +39,4 @@ module.exports = {
     hidemenu: "hidemenu 400ms ease forwards",
   },
   plugins: [require("@tailwindcss/line-clamp")],
-};
+}
