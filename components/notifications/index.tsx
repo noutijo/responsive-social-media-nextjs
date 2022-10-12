@@ -33,7 +33,7 @@ export default function AllNotifications() {
             <NotificationsSkeleton />
           ) : (
             <>
-              {/** get all posts/feeds and display*/}
+              {/** get all notifications and display*/}
               {notificationsData.map((item, __) => (
                 <NotificationItem key={__} data={item} />
               ))}{" "}

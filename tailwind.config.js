@@ -5,6 +5,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./data/**/*.{js,ts,jsx,tsx}",
+    "./services/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -39,4 +40,4 @@ module.exports = {
     hidemenu: "hidemenu 400ms ease forwards",
   },
   plugins: [require("@tailwindcss/line-clamp")],
-}
+};
