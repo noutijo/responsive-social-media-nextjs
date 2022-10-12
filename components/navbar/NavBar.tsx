@@ -24,6 +24,7 @@ export default function NavBar() {
                 height={30}
                 src={`/logo.png`}
                 alt={`${"profile"}`}
+                priority
               />
               <h2 className="font-bold text-xl cursor-pointer hidden lg:block">
                 nooutidev
@@ -49,6 +50,8 @@ export default function NavBar() {
               className="rounded-full overflow-hidden aspect-[1/1]"
               onClick={showAsideBarMenu}>
               <Image
+                placeholder="blur"
+                blurDataURL={`/images/me.jpeg`}
                 width={36}
                 height={36}
                 src="/images/me.jpeg"

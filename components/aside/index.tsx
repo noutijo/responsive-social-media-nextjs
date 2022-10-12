@@ -22,7 +22,14 @@ export default function Aside() {
         }`}>
         <div className="p-4 flex bg-colorWhite rounded-2xl items-center gap-4 w-full">
           <div className="rounded-full aspect-[1/1] overflow-hidden">
-            <Image width={40} height={40} src="/images/me.jpeg" alt="" />
+            <Image
+              placeholder="blur"
+              blurDataURL={`/images/me.jpeg`}
+              width={40}
+              height={40}
+              src="/images/me.jpeg"
+              alt=""
+            />
           </div>
           <div className="md:hidden lg:block">
             <h3 className="text-md font-medium">Oreol Noumodong</h3>
@@ -54,5 +61,5 @@ export default function Aside() {
         </div>
       </aside>
     </>
-  )
+  );
 }

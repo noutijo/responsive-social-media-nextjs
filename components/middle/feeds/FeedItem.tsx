@@ -26,6 +26,8 @@ export default function FeedItem({ data }: { data: postType }) {
         <div className="flex items-center gap-4">
           <div className="rounded-full overflow-hidden flex">
             <Image
+              placeholder="blur"
+              blurDataURL={`/images/${user.profile_img}`}
               width={30}
               height={30}
               src={`/images/${user.profile_img}`}
@@ -45,7 +47,15 @@ export default function FeedItem({ data }: { data: postType }) {
       </div>
       {/**feeds */}
       <div className="rounded-2xl overflow-hidden my-3 w-full">
-        <img src={`./images/${post_img}`} alt="feed image" />
+        <Image
+          placeholder="blur"
+          blurDataURL={`/images/${post_img}`}
+          width={600}
+          height={400}
+          src={`/images/${post_img}`}
+          alt={post_img}
+          objectFit="cover"
+        />
       </div>
 
       <div className="flex justify-between items-center m-2 text-lg">
@@ -92,5 +102,5 @@ export default function FeedItem({ data }: { data: postType }) {
 
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
-  )
+  );
 }

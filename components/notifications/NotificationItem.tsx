@@ -11,8 +11,10 @@ export default function NotificationItem({ data }: { data: notificationType }) {
             <Image
               width={50}
               height={50}
+              placeholder="blur"
+              blurDataURL={`/images/${profile_img}`}
               src={`/images/${profile_img}`}
-              alt={`${"profile"}`}
+              alt={`${name} profile`}
             />
           </div>
           <div className="text-sm w-full ml-2">
@@ -26,5 +28,5 @@ export default function NotificationItem({ data }: { data: notificationType }) {
         </div>
       </div>
     </>
-  )
+  );
 }

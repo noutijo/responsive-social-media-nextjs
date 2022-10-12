@@ -14,6 +14,8 @@ export default function StoryItem({ data }: { data: storyType }) {
         <Image
           width={30}
           height={30}
+          placeholder="blur"
+          blurDataURL={`/images/${profile_img}`}
           src={`/images/${profile_img}`}
           alt={`${"profile"}`}
         />

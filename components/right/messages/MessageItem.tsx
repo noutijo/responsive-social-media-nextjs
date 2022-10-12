@@ -11,8 +11,10 @@ export default function MessageItem({ data }: { data: messageType }) {
             <Image
               width={35}
               height={35}
+              placeholder="blur"
+              blurDataURL={`/images/${user.profile_img}`}
               src={`/images/${user.profile_img}`}
-              alt={`${user.name}`}
+              alt={`${user.name} profile`}
             />
           </div>
           <div className={`${user.connected ? "active-user" : ""}`}></div>
@@ -28,5 +30,5 @@ export default function MessageItem({ data }: { data: messageType }) {
         </div>
       </div>
     </>
-  )
+  );
 }
