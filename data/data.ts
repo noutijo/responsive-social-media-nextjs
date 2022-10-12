@@ -201,7 +201,7 @@ export const postsData: postType[] = [
         },
         post_img: "feed-5.jpg",
         like_by_profiles: ["profile-1.jpg", "profile-3.jpg", "profile-11.jpg"],
-        like_by_name: "Njipuoan Lun",
+        like_by_name: "Njinpuoan Lun",
         post_desc: "Lorem ipsum dolor sit #adipiscing #elit, #sed do eiusmod tempor incididunt #ut labore.",
         total_likes: 97,
         location: "CM",

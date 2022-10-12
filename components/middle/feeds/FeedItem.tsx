@@ -68,7 +68,7 @@ export default function FeedItem({ data }: { data: postType }) {
           </span>
         ))}
 
-        <p className="ml-2">
+        <p className="ml-2 line-clamp-1">
           Liked by <b>{like_by_name}</b> and <b>{total_likes} orthers</b>
         </p>
       </div>
