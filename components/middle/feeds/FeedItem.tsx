@@ -50,8 +50,8 @@ export default function FeedItem({ data }: { data: postType }) {
         <Image
           placeholder="blur"
           blurDataURL={`/images/${post_img}`}
-          width={600}
-          height={400}
+          width={1000}
+          height={620}
           src={`/images/${post_img}`}
           alt={post_img}
           objectFit="cover"
