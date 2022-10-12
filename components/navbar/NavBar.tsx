@@ -4,21 +4,31 @@ import { useDrawer } from "@hooks/AsideBarHook";
 
 export default function NavBar() {
   // get drawer contex
-  const drawer = useDrawer()
+  const drawer = useDrawer();
 
   //handle displaying drawer
   const showAsideBarMenu = () => {
     drawer.setMenuStatus((state) => {
-      return !state
-    })
-  }
+      return !state;
+    });
+  };
 
   return (
     <>
       <nav className="sticky w-screen bg-colorWhite p-[0.7rem_0] top-0 z-10">
         <div className="w-[92vw] lg:w-[80vw] m-auto flex justify-between items-center">
           <Link href={"/"}>
-            <h2 className="font-bold text-md cursor-pointer">nooutidev</h2>
+            <div className="flex items-center gap-2">
+              <Image
+                width={45}
+                height={30}
+                src={`/logo.png`}
+                alt={`${"profile"}`}
+              />
+              <h2 className="font-bold text-xl cursor-pointer hidden lg:block">
+                nooutidev
+              </h2>
+            </div>
           </Link>
           <div className="bg-colorLight rounded-full p-3 hidden md:block">
             <i className="bi bi-search text-colorGray"></i>

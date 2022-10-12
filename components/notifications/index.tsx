@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { notificationsData } from "@data/data";
 import NotificationItem from "./NotificationItem";
 import NotificationsSkeleton from "./NotificationsSkeleton";
 
@@ -31,11 +32,10 @@ export default function AllNotifications() {
             <NotificationsSkeleton />
           ) : (
             <>
-              <NotificationItem />
-              <NotificationItem />
-              <NotificationItem />
-              <NotificationItem />
-              <NotificationItem />
+              {/** get all posts/feeds and display*/}
+              {notificationsData.map((item, __) => (
+                <NotificationItem key={__} data={item} />
+              ))}{" "}
             </>
           )}
         </div>

@@ -10,11 +10,11 @@ export default function FeedItem({ data }: { data: postType }) {
     post_desc,
     total_likes,
     location,
-    date
+    date,
   } = data;
 
   return (
-    <div className="bg-colorWhite rounded-2xl p-4 my-4 w-full">
+    <div className="bg-colorWhite rounded-2xl p-4 my-4 first:mt-0 w-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="rounded-full overflow-hidden flex">
@@ -25,7 +25,7 @@ export default function FeedItem({ data }: { data: postType }) {
               alt={user.profile_img}
             />
           </div>
-          <div className="info-user">
+          <div className="flex flex-col gap-1">
             <h3 className="text-sm font-medium">{user.name}</h3>
             <small className="text-colorGray text-xs">
               {location}, {date} ago
@@ -78,7 +78,7 @@ export default function FeedItem({ data }: { data: postType }) {
           <b>{like_by_name}</b> {post_desc}
         </p>
       </div>
-      
+
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
   );

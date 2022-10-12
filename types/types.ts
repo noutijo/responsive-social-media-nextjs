@@ -36,10 +36,17 @@ export type postType = {
         profile_img: string,
     },
     post_img: string,
-    like_by_profiles:string[],
-    like_by_name:string,
-    post_desc:string,
-    location:string,
-    date:string,
-    total_likes:number
+    like_by_profiles: string[],
+    like_by_name: string,
+    post_desc: string,
+    location: string,
+    date: string,
+    total_likes: number
+}
+
+export type notificationType = {
+    name: string,
+    profile_img: string,
+    message: string,
+    date: string,
 }

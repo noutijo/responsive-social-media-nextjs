@@ -13,12 +13,10 @@ export default function Document() {
 
     if (localFontSize) {
         document.documentElement.classList.add(localFontSize);
-        //document.getElementsByClassName(localFontSize.toString()).classList.add("active");
     }
     else {
       localStorage.fontSize ='font-size-3';
       document.documentElement.classList.add('font-size-3');
-      //document.getElementsByClassName(localFontSize.toString()).classList.add("active");
     }
 
      
@@ -29,8 +27,8 @@ export default function Document() {
         document.documentElement.classList.add(localColorPrimary);
     }
     else {
-      localStorage.colorPrimary ='primary-color-1';
-      document.documentElement.classList.add('primary-color-1');
+      localStorage.colorPrimary ='primary-color-3';
+      document.documentElement.classList.add('primary-color-3');
     }
 
     //init bg theme
@@ -43,7 +41,7 @@ export default function Document() {
       localStorage.bgColor ='bg-color-1';
       document.documentElement.classList.add('bg-color-1');
     }
-            
+       
             `,
           }}></script>
         <meta charSet="utf-8" />

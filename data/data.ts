@@ -1,4 +1,4 @@
-import { menuItemType, messageType, requestType, storyType, postType } from "@/types/types"
+import { menuItemType, messageType, requestType, storyType, postType, notificationType } from "@/types/types"
 
 //menu items
 export const menuItemsData: menuItemType[] = [
@@ -177,7 +177,7 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-8.jpg", "profile-10.jpg", "profile-11.jpg"],
         like_by_name: "Juan Lee",
         post_desc: "dolor sit #adipiscing #elit, #sed tempor incididunt #ut.",
-        total_likes: 134, 
+        total_likes: 134,
         location: "USA",
         date: "2h",
     },
@@ -190,7 +190,7 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-12.jpg", "profile-11.jpg", "profile-15.jpg"],
         like_by_name: "Ricardo Lian",
         post_desc: "Lorem ipsum dolor sit amet, consectetur #elit, #sed do eiusmod tempor incididunt #ut labore.",
-        total_likes: 2, 
+        total_likes: 2,
         location: "UK",
         date: "57 minutes",
     },
@@ -203,7 +203,7 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-1.jpg", "profile-3.jpg", "profile-11.jpg"],
         like_by_name: "Njinpuoan Lun",
         post_desc: "Lorem ipsum dolor sit #adipiscing #elit, #sed do eiusmod tempor incididunt #ut labore.",
-        total_likes: 97, 
+        total_likes: 97,
         location: "CM",
         date: "13w",
     },
@@ -216,7 +216,7 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-4.jpg", "profile-12.jpg", "profile-11.jpg"],
         like_by_name: "Jean Lurc",
         post_desc: "Lorem ipsum dolor sit amet, consectetur #adipiscing #elit, #sed do eiusmod tempor incididunt #ut labore.",
-        total_likes: 7, 
+        total_likes: 7,
         location: "ANGOLA",
         date: "1w",
     },
@@ -229,7 +229,7 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-17.jpg", "profile-1.jpg", "profile-11.jpg"],
         like_by_name: "Steve Matt",
         post_desc: "Lorem ipsum dolor sit amet, consectetur #adipiscing #elit, #sed do eiusmod tempor incididunt #ut labore.",
-        total_likes: 9, 
+        total_likes: 9,
         location: "RUSSIA",
         date: "344w",
     },
@@ -242,7 +242,7 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-12.jpg", "profile-10.jpg", "profile-14.jpg"],
         like_by_name: "Hamadou Kari",
         post_desc: "Lorem ipsum dolor sit amet, consectetur do eiusmod tempor incididunt #ut labore.",
-        total_likes: 209, 
+        total_likes: 209,
         location: "Tchad",
         date: "2 minutes",
     },
@@ -255,9 +255,60 @@ export const postsData: postType[] = [
         like_by_profiles: ["profile-9.jpg", "profile-10.jpg", "profile-11.jpg"],
         like_by_name: "Teneu Steve",
         post_desc: "Lorem ipsum, consectetur #adipiscing #elit, #sed do eiusmod tempor incididunt #ut labore.",
-        total_likes: 29, 
+        total_likes: 29,
         location: "Canada",
         date: "12w",
-},
+    },
+]
 
+//mutual friends data
+export const notificationsData: notificationType[] = [
+    {
+        name: "Maelle E.",
+        profile_img: "profile-12.jpg",
+        message: "Acceptted your friend request",
+        date: "2 minutes",
+    },
+    {
+        name: "Emile Jules",
+        profile_img: "profile-15.jpg",
+        message: "Commented on your post",
+        date: "9 minutes",
+    },
+    {
+        name: "Brian Matt",
+        profile_img: "profile-20.jpg",
+        message: "Shared your post",
+        date: "10 minutes",
+    },
+    {
+        name: "Emily R.",
+        profile_img: "profile-16.jpg",
+        message: "Shared a new post",
+        date: "11 minutes",
+    },
+    {
+        name: "Franck Levy",
+        profile_img: "profile-10.jpg",
+        message: "Commented on your post",
+        date: "23 minutes",
+    },
+    {
+        name: "Kamta Brice",
+        profile_img: "profile-4.jpg",
+        message: "Sent you a frient resquest",
+        date: "2h",
+    },
+    {
+        name: "Fabio Junior",
+        profile_img: "profile-3.jpg",
+        message: "Sent you a frient resquest",
+        date: "3h minutes",
+    },
+    {
+        name: "Oke Arielle",
+        profile_img: "profile-6.jpg",
+        message: "Comment on you post",
+        date: "1w",
+    },
 ]
