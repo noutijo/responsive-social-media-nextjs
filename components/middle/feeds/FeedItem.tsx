@@ -1,6 +1,7 @@
 import { postType } from "@/types/types"
 import Image from "next/image"
 import { useState } from "react"
+import FeedPopover from "./FeedPopover"
 
 export default function FeedItem({ data }: { data: postType }) {
   const {
@@ -41,8 +42,9 @@ export default function FeedItem({ data }: { data: postType }) {
             </small>
           </div>
         </div>
-        <span className="edit">
-          <i className="bi bi-three-dots"></i>
+        {/** edit dots */}
+        <span className="edit relative">
+          <FeedPopover />
         </span>
       </div>
       {/**feeds */}

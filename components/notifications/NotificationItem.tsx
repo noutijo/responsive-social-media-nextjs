@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { notificationType } from "@/types/types"
+import NotificationPoPover from "./NotificationPoPover";
 
 export default function NotificationItem({ data }: { data: notificationType }) {
   const { name, profile_img, message, date } = data
@@ -22,8 +23,8 @@ export default function NotificationItem({ data }: { data: notificationType }) {
             {message}
             <small className="text-colorGray ml-2">{date} ago</small>
           </div>
-          <span className="edit">
-            <i className="bi bi-three-dots"></i>
+          <span className="edit relative">
+            <NotificationPoPover/>
           </span>
         </div>
       </div>
