@@ -26,7 +26,7 @@ export default function Aside() {
           </div>
           <div className="md:hidden lg:block">
             <h3 className="text-md font-medium">Oreol Noumodong</h3>
-            <p className="text-colorGray text-sm">@oreol</p>
+            <p className="text-colorGray text-sm">@oreolnoumodong</p>
           </div>
           <button
             className="md:hidden   w-[3rem] h-[3rem] absolute top-50 right-6"
