@@ -5,7 +5,7 @@ export default function AllMessages() {
   return (
     <>
       <div className="bg-colorWhite rounded-2xl p-4">
-        <div className="flex justify-between items-center mt-4 text-md font-bold">
+        <div className="flex justify-between items-center text-md font-bold">
           <h4>Messages</h4>
           <i className="bi bi-pencil-square"></i>
         </div>
@@ -35,7 +35,6 @@ export default function AllMessages() {
         {messagesData.map((item, __) => (
           <MessageItem key={__} data={item} />
         ))}
-
       </div>
     </>
   );
