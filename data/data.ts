@@ -308,7 +308,7 @@ export const notificationsData: notificationType[] = [
     {
         name: "Oke Arielle",
         profile_img: "profile-6.jpg",
-        message: "Comment on you post",
+        message: "Commented on you post",
         date: "1w",
     },
 ]
