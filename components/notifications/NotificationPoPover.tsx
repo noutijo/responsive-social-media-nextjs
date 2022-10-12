@@ -5,12 +5,12 @@ import { Fragment } from "react";
 const items = [
   {
     name: "Delete",
-    href: "/",
+    href: "/notifications",
     icon: "bi-trash3",
   },
   {
     name: "Report",
-    href: "/",
+    href: "/notifications",
     icon: "bi-flag",
   },
 ];
