@@ -119,4 +119,30 @@
         position: absolute;
         bottom: 0;
     }
+
+    /* --------- animate like bitton ----------- */
+    div.heart .like-btn-svg {
+        height: 50px;
+        width: 50px;
+        background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat;
+        cursor: pointer;
+        background-size: 3000%;
+        background-position: 0 0;
+    }
+
+    div.heart .animate-like {
+        transition: background 1s steps(28);
+        animation: fave-like-btn-svg 1s steps(28) forwards;
+        background-position: left;
+    }
+
+    @keyframes fave-like-btn-svg {
+        from {
+            background-position: left;
+        }
+
+        to {
+            background-position: right;
+        }
+    }
 }
