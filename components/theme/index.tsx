@@ -2,7 +2,7 @@ import ThemeFontSize from "./ThemeFontSize"
 import ThemePrimaryColor from "./ThemePrimaryColor"
 import ThemeBackgroundColor from "./ThemeBackgroundColor"
 import { useEffect, useState } from "react"
-import { fontSizes, primaryColorsTheme, bgColorsTheme } from "services/theme"
+import { fontSizes, primaryColorsTheme, bgColorsTheme } from "utilities/theme"
 
 export default function ThemeSettings() {
   const [currentFontSize, setCurrentFontSize] = useState<string>("")
