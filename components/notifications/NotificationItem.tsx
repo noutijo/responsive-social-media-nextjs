@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { notificationType } from "@/types/types"
-import NotificationPoPover from "./NotificationPoPover";
+import NotificationPoPover from "./NotificationPoPover"
 
 export default function NotificationItem({ data }: { data: notificationType }) {
   const { name, profile_img, message, date } = data
@@ -29,5 +29,5 @@ export default function NotificationItem({ data }: { data: notificationType }) {
         </div>
       </div>
     </>
-  );
+  )
 }

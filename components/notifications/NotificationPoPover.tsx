@@ -1,6 +1,6 @@
-import { Popover, Transition } from "@headlessui/react";
-import Link from "next/link";
-import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react"
+import Link from "next/link"
+import { Fragment } from "react"
 
 const items = [
   {
@@ -8,12 +8,7 @@ const items = [
     href: "/notifications",
     icon: "bi-trash3",
   },
-  {
-    name: "Report",
-    href: "/notifications",
-    icon: "bi-flag",
-  },
-];
+]
 
 export default function NotificationPoPover() {
   return (
@@ -57,5 +52,5 @@ export default function NotificationPoPover() {
         )}
       </Popover>
     </div>
-  );
+  )
 }
