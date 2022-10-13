@@ -10,7 +10,7 @@ const [isLiked, setLiked] = useState<boolean>(false)
         onClick={() => setLiked(!isLiked)}>
         <label className="-ml-[18px]">
           <div
-            className={`like-btn-svg ${!isLiked ? "animate-like" : ""} `}></div>
+            className={`like-btn-svg ${isLiked ? "animate-like" : ""} `}></div>
         </label>
       </div>
     </>
