@@ -18,10 +18,12 @@ export default function NotificationItem({ data }: { data: notificationType }) {
               alt={`${name} profile`}
             />
           </div>
-          <div className="text-sm w-full ml-2">
+          <div className="text-sm w-full ml-2 flex items-center flex-wrap">
+          <div className="mr-2">
             <b className="mr-2">{name}</b>
             {message}
-            <small className="text-colorGray ml-2">{date} ago</small>
+          </div>
+            <small className="text-colorGray">{date} ago</small>
           </div>
           <span className="edit relative">
             <NotificationPoPover/>
