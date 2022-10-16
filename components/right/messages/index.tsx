@@ -10,7 +10,7 @@ export default function AllMessages() {
           <i className="bi bi-pencil-square"></i>
         </div>
 
-        <div className="flex bg-colorLight rounded-full p-3 text-colorGray my-4">
+        <div className="flex bg-colorLight rounded-full p-3 text-colorGray my-4 ring-1 ring-gray-200/10">
           <i className="bi bi-search"></i>
           <input
             className="outline-none bg-transparent w-full ml-4 text-colorDark placeholder:text-colorGray text-sm"

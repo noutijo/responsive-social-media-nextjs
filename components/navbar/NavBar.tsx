@@ -31,7 +31,7 @@ export default function NavBar() {
               </h2>
             </div>
           </Link>
-          <div className="bg-colorLight rounded-full p-3 hidden md:block">
+          <div className="bg-colorLight rounded-full p-3 hidden md:block ring-1 ring-gray-200/10">
             <i className="bi bi-search text-colorGray"></i>
             <input
               className="outline-none bg-transparent w-[30vw] ml-4 text-colorDark placeholder:text-colorGray text-sm"
