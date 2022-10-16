@@ -25,19 +25,5 @@ module.exports = {
       },
     },
   },
-  keyframes: ({ theme }) => ({
-    showmenu: {
-      from: { left: "-100%" },
-      to: { left: "0%" },
-    },
-    hidemenu: {
-      from: { left: "0%" },
-      to: { left: "-100%" },
-    },
-  }),
-  animation: {
-    showmenu: "showmenu 400ms ease forwards",
-    hidemenu: "hidemenu 400ms ease forwards",
-  },
   plugins: [require("@tailwindcss/line-clamp")],
 };
