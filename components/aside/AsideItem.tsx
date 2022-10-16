@@ -40,8 +40,8 @@ export default function AsideBarItem({
               : ""
           }`}
           onClick={() => {
-            showAsideBarMenu();
-            SetIsTotalNotifications(0);
+            showAsideBarMenu()
+            SetIsTotalNotifications(0)
           }}>
           <span>
             <i className={`bi ${iconName} text-colorGray ml-8 relative`}>
@@ -58,5 +58,5 @@ export default function AsideBarItem({
         </a>
       </Link>
     </>
-  );
+  )
 }

@@ -1,6 +1,5 @@
 import { postType } from "@/types/types"
 import Image from "next/image"
-import { useState } from "react"
 import FeedPopover from "./FeedPopover"
 import LikeButton from "./LikeButton"
 
@@ -96,5 +95,5 @@ export default function FeedItem({ data }: { data: postType }) {
 
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
-  );
+  )
 }

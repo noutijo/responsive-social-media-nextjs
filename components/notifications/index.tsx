@@ -42,5 +42,5 @@ export default function AllNotifications() {
         </div>
       </div>
     </>
-  );
+  )
 }

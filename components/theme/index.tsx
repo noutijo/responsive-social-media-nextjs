@@ -17,7 +17,7 @@ export default function ThemeSettings() {
     setCurrentFontSize(themeSize)
   }
 
-  //change font size theme
+  //change bg-color theme
   const setBgColor = (bgClassName: string) => {
     localStorage.bgColor = bgClassName
     document.documentElement.classList.remove(currentBgColor.toString())
@@ -25,7 +25,7 @@ export default function ThemeSettings() {
     setCurrentBgColor(bgClassName)
   }
 
-  //change font size theme
+  //change primary-color theme
   const setPrimaryColor = (primaryColorClassName: string) => {
     localStorage.colorPrimary = primaryColorClassName
     document.documentElement.classList.remove(currentPrimaryColor.toString())
@@ -102,5 +102,5 @@ export default function ThemeSettings() {
         </div>
       </div>
     </>
-  );
+  )
 }

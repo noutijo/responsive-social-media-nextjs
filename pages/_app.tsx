@@ -24,15 +24,13 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const NestedLayout = Component.Layout || DefaultLayout
 
   return (
-        <AsideBarProvider>
-
+    <AsideBarProvider>
       <NavBarLayout>
         <NestedLayout>
           <Component {...pageProps} />
         </NestedLayout>
       </NavBarLayout>
-          </AsideBarProvider>
-
+    </AsideBarProvider>
   )
 }
 

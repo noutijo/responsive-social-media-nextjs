@@ -30,5 +30,5 @@ export default function MessageItem({ data }: { data: messageType }) {
         </div>
       </div>
     </>
-  );
+  )
 }

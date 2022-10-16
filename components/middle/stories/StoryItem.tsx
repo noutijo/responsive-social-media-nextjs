@@ -22,5 +22,5 @@ export default function StoryItem({ data }: { data: storyType }) {
       </div>
       <p className="z-[2] font-medium">{name}</p>
     </div>
-  );
+  )
 }
