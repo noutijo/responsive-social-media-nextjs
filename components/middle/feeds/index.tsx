@@ -5,7 +5,7 @@ import FeedItem from "./FeedItem"
 export default function Feeds() {
   return (
     <>
-      <div className="w-full flex items-center justify-between gap-4 mt-4 bg-colorWhite p-[0.6rem_1rem] rounded-2xl">
+      <div className="w-full flex items-center justify-between gap-4 mt-4 bg-colorWhite p-[0.6rem_1rem] rounded-2xl ring-1 ring-gray-200/10">
         {/** search bar -feeds */}
         <div className="rounded-full overflow-hidden flex">
           <Image
@@ -30,7 +30,7 @@ export default function Feeds() {
         />
       </div>
 
-      <div className="mt-4 overflow-x-scroll w-full">
+      <div className="mt-4 w-full">
         {/** get all posts/feeds and display*/}
         {postsData.map((item, __) => (
           <FeedItem key={__} data={item} />

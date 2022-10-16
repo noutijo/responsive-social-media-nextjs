@@ -17,7 +17,7 @@ export default function FeedItem({ data }: { data: postType }) {
   } = data
 
   return (
-    <div className="bg-colorWhite rounded-2xl p-4 my-4 first:mt-0 w-full">
+    <div className="bg-colorWhite rounded-2xl p-4 my-4 first:mt-0 w-full ring-1 ring-gray-200/10">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="rounded-full overflow-hidden flex">
@@ -96,5 +96,5 @@ export default function FeedItem({ data }: { data: postType }) {
 
       <div className="text-sm mt-2 text-colorGray">View all 345 commments</div>
     </div>
-  )
+  );
 }

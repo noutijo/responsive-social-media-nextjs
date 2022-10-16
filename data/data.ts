@@ -162,6 +162,11 @@ export const storiesData: storyType[] = [
         profile_img: "profile-17.jpg",
         story_img: "story-5.jpg",
     },
+    {
+        name: "Nelson Joe",
+        profile_img: "profile-11.jpg",
+        story_img: "story-6.jpg",
+    },
 ]
 
 //posts datas

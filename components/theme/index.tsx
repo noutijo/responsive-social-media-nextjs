@@ -42,7 +42,7 @@ export default function ThemeSettings() {
   return (
     <>
       <div className="w-full">
-        <div className="bg-colorWhite rounded-2xl p-8">
+        <div className="bg-colorWhite rounded-2xl p-8 ring-1 ring-gray-200/10">
           <h2 className="text-xl font-bold">Customize you view</h2>
           <p className="text-colorGray mt-2">
             Manage your fontsize, color, and background
@@ -102,5 +102,5 @@ export default function ThemeSettings() {
         </div>
       </div>
     </>
-  )
+  );
 }

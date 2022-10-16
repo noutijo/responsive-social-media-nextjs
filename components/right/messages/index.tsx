@@ -4,7 +4,7 @@ import { messagesData } from "@data/data"
 export default function AllMessages() {
   return (
     <>
-      <div className="bg-colorWhite rounded-2xl p-4">
+      <div className="bg-colorWhite rounded-2xl p-4 ring-1 ring-gray-200/10">
         <div className="flex justify-between items-center text-md font-bold">
           <h4>Messages</h4>
           <i className="bi bi-pencil-square"></i>
@@ -37,5 +37,5 @@ export default function AllMessages() {
         ))}
       </div>
     </>
-  )
+  );
 }

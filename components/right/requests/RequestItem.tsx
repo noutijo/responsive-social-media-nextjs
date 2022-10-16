@@ -5,7 +5,7 @@ export default function RequestItem({ data }: { data: requestType }) {
   const { name, profile_img, mutual_friends } = data;
   return (
     <>
-      <div className="bg-colorWhite p-4 rounded-2xl mb-3">
+      <div className="bg-colorWhite p-4 rounded-2xl mb-3 ring-1 ring-gray-200/10">
         <div className="flex items-center gap-4 mb-4">
           <div className="rounded-full overflow-hidden flex">
             <Image

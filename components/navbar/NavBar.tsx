@@ -15,7 +15,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="sticky w-screen bg-colorWhite p-[0.7rem_0] top-0 z-10">
+      <nav className="sticky w-screen bg-colorWhite p-[0.7rem_0] top-0 z-10 ring-1 ring-gray-200/10">
         <div className="w-[92vw] lg:w-[80vw] m-auto flex justify-between items-center">
           <Link href={"/"}>
             <div className="flex items-center gap-2">
@@ -62,5 +62,5 @@ export default function NavBar() {
         </div>
       </nav>
     </>
-  )
+  );
 }

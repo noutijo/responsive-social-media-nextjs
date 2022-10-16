@@ -17,10 +17,10 @@ export default function Aside() {
   return (
     <>
       <aside
-        className={`fixed h-screen bg-colorLight top-0 p-4 w-[84vw] land sm:landscape:w-[47vw] overflow-y-auto  md:landscape:w-full !left-[-0%] md:left-[0%] animate-showmenu md:animate-none lg:overflow-y-hidden md:w-max md:bg-transparent md:p-0 md:h-max z-[10] md:z-[1] md:sticky md:top-[6.5rem] md:block ${
+        className={`fixed h-screen bg-colorLight top-0 p-4 w-[84vw] land sm:landscape:w-[47vw] md:landscape:w-full !left-[-0%] md:left-[0%] !animate-showmenu md:animate-none md:w-max md:bg-transparent md:p-0 md:h-max z-[10] md:z-[1] md:sticky md:top-[6.5rem] md:block ${
           drawer.isopen ? "block" : "hidden"
         }`}>
-        <div className="p-4 flex bg-colorWhite rounded-2xl items-center gap-4 w-full">
+        <div className="p-4 flex bg-colorWhite rounded-2xl items-center gap-4 w-full ring-1 ring-gray-200/10">
           <div className="rounded-full aspect-[1/1] overflow-hidden">
             <Image
               placeholder="blur"
@@ -41,7 +41,7 @@ export default function Aside() {
             <i className="bi bi-x text-3xl"> </i>
           </button>
         </div>
-        <div className="mt-4 bg-colorWhite rounded-2xl">
+        <div className="mt-4 bg-colorWhite rounded-2xl overflow-hidden ring-1 ring-gray-200/10">
           {/** get all menu items and display*/}
           {menuItemsData.map((item, __) => (
             <AsideBarItem

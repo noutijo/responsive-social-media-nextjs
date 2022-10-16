@@ -35,17 +35,19 @@ export default function AsideBarItem({
       <Link href={url}>
         <a
           className={`flex h-14 transition-all duration-300 ease-out relative items-center cursor-pointer hover:bg-colorLight gap-6 text-md first:rounded-tl-2xl last:rounded-bl-2xl overflow-hidden ${
-            url.slice(1) === isSelected ? "active-menu" : ""
+            url.slice(1) === isSelected
+        ? "active-menu"
+              : ""
           }`}
           onClick={() => {
-            showAsideBarMenu()
-            SetIsTotalNotifications(0)
+            showAsideBarMenu();
+            SetIsTotalNotifications(0);
           }}>
           <span>
             <i className={`bi ${iconName} text-colorGray ml-8 relative`}>
               {totalNotifications > 0 ? (
                 <small className="bg-colorDanger text-white text-xs w-fit rounded-full p-[0.1rem_0.4rem] absolute top-[-0.5rem] right-[-0.7rem]">
-                  {totalNotifications > 9 ? "+9" : `${totalNotifications}`}
+                  {totalNotifications > 9 ? "9+" : `${totalNotifications}`}
                 </small>
               ) : (
                 ""
@@ -56,5 +58,5 @@ export default function AsideBarItem({
         </a>
       </Link>
     </>
-  )
+  );
 }
