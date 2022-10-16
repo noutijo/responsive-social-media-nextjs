@@ -2,7 +2,7 @@ import ThemeFontSize from "./ThemeFontSize"
 import ThemePrimaryColor from "./ThemePrimaryColor"
 import ThemeBackgroundColor from "./ThemeBackgroundColor"
 import { useEffect, useState } from "react"
-import { fontSizes, primaryColorsTheme, bgColorsTheme } from "utilities/theme"
+import theme from "utilities/theme"
 
 export default function ThemeSettings() {
   const [currentFontSize, setCurrentFontSize] = useState<string>("")
@@ -54,7 +54,7 @@ export default function ThemeSettings() {
               <h6 className="text-xs">Aa</h6>
               <div className="bg-colorSecondary h-1 w-full mx-1 flex justify-between items-center">
                 {/** display all custom sizes */}
-                {fontSizes.map((themeSize, __) => (
+                {theme.fontSizes.map((themeSize, __) => (
                   <ThemeFontSize
                     key={__}
                     currentFontSize={currentFontSize}
@@ -71,7 +71,7 @@ export default function ThemeSettings() {
             <h4 className="text-sm font-medium">Color</h4>
             <div className="bg-colorLight p-4 mt-1 flex items-center justify-between rounded-2xl">
               {/** display all custom primary colors */}
-              {primaryColorsTheme.map((item, __) => (
+              {theme.primaryColorsTheme.map((item, __) => (
                 <ThemePrimaryColor
                   key={__}
                   primaryColorClassName={item.primaryColorClassName}
@@ -87,7 +87,7 @@ export default function ThemeSettings() {
             <h4 className="text-sm font-medium">Background</h4>
             <div className="flex flex-wrap items-center mt-1 gap-4">
               {/** display all custom bg colors */}
-              {bgColorsTheme.map((item, __) => (
+              {theme.bgColorsTheme.map((item, __) => (
                 <ThemeBackgroundColor
                   key={__}
                   bgClassName={item.bgClassName}

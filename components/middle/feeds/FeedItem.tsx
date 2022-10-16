@@ -77,7 +77,7 @@ export default function FeedItem({ data }: { data: postType }) {
         {like_by_profiles.map((item, __) => (
           <span
             key={__}
-            className="rounded-full w-6 h-6 overflow-hidden border-2 border-colorWhite flex -ml-3 first:ml-0">
+            className="rounded-full w-6 h-6 overflow-hidden ring-1 ring-white/50 flex -ml-3 first:ml-0">
             <Image width={18} height={18} src={`/images/${item}`} alt={item} />
           </span>
         ))}
@@ -88,7 +88,7 @@ export default function FeedItem({ data }: { data: postType }) {
       </div>
 
       <div className="text-sm">
-        <p className="line-clamp-2">
+        <p className="line-clamp-2 mt-3">
           <b>{like_by_name}</b> {post_desc}
         </p>
       </div>
