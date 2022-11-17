@@ -17,7 +17,7 @@ export default function Aside() {
   return (
     <>
       <aside
-        className={`fixed h-screen bg-colorLight top-0 p-4 w-[84vw] land sm:landscape:w-[47vw] md:landscape:w-full !left-[-0%] md:left-[0%] md:w-max md:bg-transparent md:p-0 md:h-max z-[10] md:z-[1] md:sticky md:top-[6.5rem] md:block ${
+        className={`fixed h-screen bg-colorLight top-0 p-4 w-[84vw] land sm:landscape:w-[47vw] md:landscape:w-full !left-[-0%] md:left-[0%] md:w-max md:bg-transparent md:p-0 md:h-max z-[10] md:z-[1] md:sticky md:top-[6.5rem] md:block overflow-y-auto pb-[100px] ${
           drawer.isopen ? "block" : "hidden"
         }`}>
         <div className="p-4 flex bg-colorWhite rounded-2xl items-center gap-4 w-full ring-1 ring-gray-200/10">
