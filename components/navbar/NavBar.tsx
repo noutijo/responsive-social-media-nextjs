@@ -23,7 +23,7 @@ export default function NavBar() {
                 width={45}
                 height={30}
                 src={`/logo.png`}
-                alt={`${"profile"}`}
+                alt={`${"logo"}`}
                 priority
               />
               <h2 className="font-bold text-xl cursor-pointer hidden lg:block">
